@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box; 
+}
+
+html,
+body {
+    min-width: 1440px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+    background-color: #fff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.visually-hidden,
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+.page-header {
+    height: 120px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #ADFF2F;
+    margin-bottom: 15px;
+}
+
+.page-header__wrapper {
+    margin: 0 135px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo__title,
+.page-header__tel {
+    font-family: Raleway, sans-serif;
+    font-size: 38px;
+    line-height: 47px;
+    font-weight: 400;
+}
+
+.page-main__wrapper {
+    margin: 0 135px;
+}
+
+.page-main__title {
+    text-transform: uppercase;
+    font-size: 28px;
+    margin: 30px 0;
+}
+
+.catalog-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    border: 5px solid #FFDEAD;
+    border-radius: 5px;
+    background-color: #FFDEAD;
+    margin-top: 30px;
+}
+
+.page-header__city {
+    font-weight: 600;
+}
+
+.card__name,
+.card__price {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.card__content {
+    margin: 10px 0 10px 5px;
+    text-align: center;
+}
+
+.card__footer {
+    margin-left: 5px;
+    text-align: center;
+}
+
+.card__header {
+    width: 350px;
+    height: 400px;
+}
+
+.card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.card__img:hover {
+    transform: scale(1.2);
+}
+
+.page-footer {
+    height: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    background-color: #ADFF2F;
+}
+
+.page-footer__wrapper {
+    margin: 0 135px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-footer__title,
+.page-footer__tel {
+    font-family: Raleway, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.slider{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    height: 300px;
+    margin: 0 135px 15px 135px;
+
+}
+/* Картинка мастабируется по отношению к родительскому элементу */
+.slider .item img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    border: none !important;
+    box-shadow: none !important;
+}
+/* Кнопки вперед и назад */
+.slider .prev, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* При наведении на кнопки добавляем фон кнопок */
+.slider .prev:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* Заголовок слайда */
+.slideText {
+    position: absolute;
+    color: #fff;
+    font-size: 35px;
+    /* Выравнивание текста по горизонтали и по вертикали*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* Тень*/
+    text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+
+.description {
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    top: 200px;
+    left: 100px;
+    width: 1000px;
+    text-align: center;
+}
+
+/* Кружочки */
+.slider-dots {
+    text-align: center;
+}
+.slider-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,
+.slider-dots_item:hover {
+    background-color: #aaa;
+}
+/* Анимация слайдов */
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}

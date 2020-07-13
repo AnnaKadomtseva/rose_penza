@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Саженцы самых популярных сортов роз</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header class="page-header">
+        <div class="page-header__wrapper">
+            <div class="page-header__logo logo">
+                <img class="logo__img" src="img/logo.svg" width="80" height="80" alt="Логотип сайта">
+                <h1 class="logo__title">Саженцы самых популярных сортов роз</h1>
+            </div>
+            <div class="page-header__contacts">
+                <a href="#" class="page-header__tel">+7 (927) 375-22-90</a><br>
+                <a href="#" class="page-header__city">город Пенза</a>
+            </div>
+        </div>
+    </header>
+    <main class="page-main">
+        <div class="page-main__slider slider">
+            <div class="item">
+                <img src="img/foto-1.jpg" alt="Моника">
+                <div class="slideText">Моника</div>
+                <p class="description">Очень яркая красно-желтая чайно-гибридная роза. Цветки наиболее яркие когда только начинают распускаться. Ярко-оранжево-алые лепестки контрастируют с желтой изнанкой. Когда цветок полностью распустится, он становится не такой яркий, и желтый контраст теряется.</p>
+            </div>
+            <div class="item">
+                <img src="img/foto-2.jpg" alt="Ностальжи">
+                <div class="slideText">Ностальжи</div>
+                <p class="description">Особенный сорт, приводящий в восторг благодаря форме, цвету и запаху! Цветки двухцветные, с чётким переходом от кремово-белых к вишнево-красным, махровые, с приятным ароматом, шаровидной формы, диаметром 8-10 см, подходят для срезки в вазы. Листья вначале тёмно-красные, позднее чёрно-зелёные, кожистые, сильно глянцевые, устойчивые к заболеваниям.</p>
+            </div>
+            <div class="item">
+                <img src="img/foto-3.jpg" alt="Кардинал">
+                <div class="slideText">Кардинал</div>
+                <p class="description">Великолепная крупноцветковая бархатисто-малиновая чайно-гибридная роза, которая была выведена как срезочный сорт, однако прекрасно подходит и для сада, особенно в теплых регионах. Роза почти не пахнет, но флористы считают что аромат укорачивает жизнь цветка. Цветки очень медленно распускаются из почти черных бутонов</p>
+            </div>
+            <a class="prev" onclick="minusSlide()">&#10094;</a>
+            <a class="next" onclick="plusSlide()">&#10095;</a>
+        </div>
+        <div class="slider-dots">
+            <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+            <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+            <span class="slider-dots_item" onclick="currentSlide(3)"></span> 
+        </div>
+        <div class="page-main__wrapper">
+            <h2 class="page-main__title">Каталог продукции</h2>
+            <ul class="page-main__catalog catalog-list">
+                <li class="catalog-list__item card">
+                    <div class="card__header">
+                        <img class="card__img" src="img/img-1.jpg" width="300" height="300" alt="Моника">
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__name">Моника</h3>
+                    </div>
+                    <div class="card__footer">
+                        <p class="card__price">175 P</p>
+                    </div>
+                </li>
+                <li class="catalog-list__item card">
+                    <div class="card__header">
+                        <img class="card__img" src="img/img-2.jpg" width="300" height="300" alt="Версилия">
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__name">Версилия</h3>
+                    </div>
+                    <div class="card__footer">
+                        <p class="card__price">175 P</p>
+                    </div>
+                </li>
+                <li class="catalog-list__item card">
+                    <div class="card__header">
+                        <img class="card__img" src="img/img-3.jpg" width="300" height="300" alt="Ностальжи">
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__name">Ностальжи</h3>
+                    </div>
+                    <div class="card__footer">
+                        <p class="card__price">175 P</p>
+                    </div>
+                </li>
+                <li class="catalog-list__item card">
+                    <div class="card__header">
+                        <img class="card__img" src="img/img-4.jpg" width="300" height="300" alt="Золотая рыбка">
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__name">Золотая рыбка</h3>
+                    </div>
+                    <div class="card__footer">
+                        <p class="card__price">175 P</p>
+                    </div>
+                </li>
+                <li class="catalog-list__item card">
+                    <div class="card__header">
+                        <img class="card__img" src="img/img-5.jpg" width="300" height="300" alt="Атена">
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__name">Атена</h3>
+                    </div>
+                    <div class="card__footer">
+                        <p class="card__price">175 P</p>
+                    </div>
+                </li>
+                <li class="catalog-list__item card">
+                    <div class="card__header">
+                        <img class="card__img" src="img/img-6.jpg" width="300" height="300" alt="Ломоносов">
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__name">Ломоносов</h3>
+                    </div>
+                    <div class="card__footer">
+                        <p class="card__price">175 P</p>
+                    </div>
+                </li>
+                <li class="catalog-list__item card">
+                    <div class="card__header">
+                        <img class="card__img" src="img/img-7.jpg" width="300" height="300" alt="Христофор">
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__name">Христофор</h3>
+                    </div>
+                    <div class="card__footer">
+                        <p class="card__price">175 P</p>
+                    </div>
+                </li>
+                <li class="catalog-list__item card">
+                    <div class="card__header">
+                        <img class="card__img" src="img/img-8.jpg" width="300" height="300" alt="Дольче Вита">
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__name">Дольче Вита</h3>
+                    </div>
+                    <div class="card__footer">
+                        <p class="card__price">175 P</p>
+                    </div>
+                </li>
+                <li class="catalog-list__item card">
+                    <div class="card__header">
+                        <img class="card__img" src="img/img-9.jpg" width="300" height="300" alt="Николь">
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__name">Николь</h3>
+                    </div>
+                    <div class="card__footer">
+                        <p class="card__price">175 P</p>
+                    </div>
+                </li>
+                <li class="catalog-list__item card">
+                    <div class="card__header">
+                        <img class="card__img" src="img/img-10.jpg" width="300" height="300" alt="Кардинал">
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__name">Кардинал</h3>
+                    </div>
+                    <div class="card__footer">
+                        <p class="card__price">175 P</p>
+                    </div>
+                </li>
+                <li class="catalog-list__item card">
+                    <div class="card__header">
+                        <img class="card__img" src="img/img-11.jpg" width="300" height="300" alt="Эйфелева башня">
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__name">Эйфелева башня</h3>
+                    </div>
+                    <div class="card__footer">
+                        <p class="card__price">175 P</p>
+                    </div>
+                </li>
+                <li class="catalog-list__item card">
+                    <div class="card__header">
+                        <img class="card__img" src="img/img-12.jpg" width="300" height="300" alt="Сатина">
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__name">Сатина</h3>
+                    </div>
+                    <div class="card__footer">
+                        <p class="card__price">175 P</p>
+                    </div>
+                </li>
+                <li class="catalog-list__item card">
+                    <div class="card__header">
+                        <img class="card__img" src="img/img-13.jpg" width="300" height="300" alt="Майзео">
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__name">Майзео</h3>
+                    </div>
+                    <div class="card__footer">
+                        <p class="card__price">175 P</p>
+                    </div>
+                </li>
+                <li class="catalog-list__item card">
+                    <div class="card__header">
+                        <img class="card__img" src="img/img-14.jpg" width="300" height="300" alt="Кенари">
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__name">Кенари</h3>
+                    </div>
+                    <div class="card__footer">
+                        <p class="card__price">175 P</p>
+                    </div>
+                </li>
+                <li class="catalog-list__item card">
+                    <div class="card__header">
+                        <img class="card__img" src="img/img-15.jpg" width="300" height="300" alt="Розовый Фламинго">
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__name">Розовый Фламинго</h3>
+                    </div>
+                    <div class="card__footer">
+                        <p class="card__price">175 P</p>
+                    </div>
+                </li>
+                <li class="catalog-list__item card">
+                    <div class="card__header">
+                        <img class="card__img" src="img/img-16.jpg" width="300" height="300" alt="Папагено">
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__name">Папагено</h3>
+                    </div>
+                    <div class="card__footer">
+                        <p class="card__price">175 P</p>
+                    </div>
+                </li>
+                <li class="catalog-list__item card">
+                    <div class="card__header">
+                        <img class="card__img" src="img/img-17.jpg" width="300" height="300" alt="Яники">
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__name">Яники</h3>
+                    </div>
+                    <div class="card__footer">
+                        <p class="card__price">175 P</p>
+                    </div>
+                </li>
+                <li class="catalog-list__item card">
+                    <div class="card__header">
+                        <img class="card__img" src="img/img-18.jpg" width="300" height="300" alt="Черри Бренди">
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__name">Черри Бренди</h3>
+                    </div>
+                    <div class="card__footer">
+                        <p class="card__price">175 P</p>
+                    </div>
+                </li>
+                <li class="catalog-list__item card">
+                    <div class="card__header">
+                        <img class="card__img" src="img/img-19.jpg" width="300" height="300" alt="Ред Интуишн">
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__name">Ред Интуишн</h3>
+                    </div>
+                    <div class="card__footer">
+                        <p class="card__price">175 P</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="page-footer__wrapper">
+            <div class="page-footer__logo logo-footer">
+                <img class="logo-footer__img" src="img/logo.svg" width="70" height="70" alt="Логотип сайта">
+                <h1 class="logo-footer__title">Саженцы самых популярных сортов роз</h1>
+            </div>
+            <div class="page-footer__contacts">
+                <p class="page-footer__description">По всем вопросам обращаться по телефону:</p>
+                <a href="#" class="page-footer__tel">+7 (927) 375-22-90</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
